@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.header{
+    margin-bottom: 40px;
+}
+
+.a{
+	display: flex;
+	justify-content: space-between;
+}
+/*テーブル*/
+table{
+    border-collapse: collapse;
+    width: 90%;
+    height: auto;
+    
+}
+table th ,table td{
+	border: 1px solid gray;
+	height: 30px
+}
+table th {
+	text-align: center;
+}
+table td {
+	text-align:center;
+}
+/*オーダーテーブル*/
+.order_box{
+	display:flex;
+	margin-top:5vw;
+}
+
+.order_table_td{
+	border: none;
+	border-bottom: 1px dotted;
+	vertical-align: bottom;
+	text-align: right;
+}
+.order_table_th{
+	border: none;
+	border-bottom: 1px dotted;
+	vertical-align: bottom;	
+	text-align: left;
+	padding-right: 5vw;
+	height: 30px;
+}
+/*注文取消しボタン*/
+#delete_button{
+	margin-left: -3.5vw;
+	font-size: large;
+  color: #f2f2f5;
+  border: none;
+ border-radius: 10px;
+ background-color: blue;
+ transition-duration: .4s;
+	
+}
+
+/*購入ボタン*/
+#order_button{
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  margin-left: 20vw;
+  color: #f2f2f5;
+  border: none;
+ background-color: rgb(245, 9, 9);
+ border-radius: 10px;
+ 
+ transition-duration: .4s;
+}
+#order_button:hover {   /*ボタンクリック浮き上がり*/
+  transform: scale(1.1);
+}
+#order_button:active {   
+  opacity: 0.5;
+}
